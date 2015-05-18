@@ -9,6 +9,7 @@
   <title>ProPLD</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
   <!-- Bootstrap core CSS -->
   <link href="<?php echo base_url()?>js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
