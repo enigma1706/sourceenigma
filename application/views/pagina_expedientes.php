@@ -75,7 +75,7 @@
                 </div>
          </div>
      </div>
- 
+     <form id="frminformacion" method="post">
               <div class="md-modal colored-header custom-width2 md-effect-9" id="modal-tab">
         <div class="md-content">
           <div class="modal-header">
@@ -93,14 +93,33 @@
           </div>
         </div>
       </div>
-    
+      </form>
       <!-- Nifty Modal -->
 <div class="md-overlay"> </div> 
         </div>
       </div> 
     </div>
 </body>
-
+<script>
+        $(document).ready(function(){                 
+            
+            $("#frminformacion").submit(function() {
+                var formulario = $("#frminformacion").serializeArray();
+                $.ajax({
+                    type: "post",
+                    dataType: 'json',
+                    url: "crear.php",
+                    data: formulario,
+                }).done(function(respuesta){
+                    //$("#mensaje").html(respuesta.mensaje);
+                    //alert(respuesta.mensaje);
+                    //location.reload();                
+                });
+                return false;
+            });        
+            
+        });
+</script>
 
 </html>
 

@@ -12,7 +12,6 @@
         <div class="tab-content">
           <div class="tab-pane active cont" id="home">
             <div class="row">
-              <form class="form-horizontal" role="form" id="frminformacion">
                 <input type="hidden" name="id" id="id" value="<?php if(isset($Id)){echo $Id;}?>">
                 <input type="hidden" name="T40" id="T40" value="NULL">
                 <input type="hidden" name="R14" id="R14" value="NULL">
@@ -33,7 +32,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="genero" class="col-sm-4 control-label">Género</label>
+           
                     <div class="col-sm-8">                        
                       <label class="radio-inline"><input type="radio" name="GENERO" id='GENERO' onclick="check1(this.value)"  class="icheck" <?php if(isset($GENERO)){if($GENERO=="Femenino"){ echo 'checked="checked"';}}?>>FEMENINO</label>
                       <label class="radio-inline"><input type="radio" name="GENERO" id='GENERO' onclick="check1(this.value)"  class="icheck" <?php if(isset($GENERO)){if($GENERO=="Masculino"){ echo 'checked="checked"';}}?>>MASCULINO&nbsp;</label>
@@ -276,7 +275,6 @@
                     </div>
                   </div>
                 </div>
-              </form>
             </div>
           </div>
         </div>          
