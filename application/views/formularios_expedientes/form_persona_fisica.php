@@ -12,7 +12,7 @@
         <div class="tab-content">
           <div class="tab-pane active cont" id="home">
             <div class="row">
-              <form class="form-horizontal" role="form" >
+              <form class="form-horizontal" role="form" id="frminformacion">
                 <input type="hidden" name="id" id="id" value="<?php if(isset($Id)){echo $Id;}?>">
                 <input type="hidden" name="T40" id="T40" value="NULL">
                 <input type="hidden" name="R14" id="R14" value="NULL">

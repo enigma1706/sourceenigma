@@ -78,6 +78,8 @@
       
     })
 
+    
+
        /* Formating function for row details */
         function fnFormatDetails ( oTable, nTr )
         {

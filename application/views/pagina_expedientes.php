@@ -89,7 +89,7 @@
           <div class="modal-footer">
            
             <button type="submit" name="submit" class="btn btn-default btn-flat md-close" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary btn-flat md-close" data-dismiss="modal">Guardar</button>
+            <button id="boton" type="submit" class="btn btn-primary btn-flat md-close" data-dismiss="modal">Guardar</button>
           </div>
         </div>
       </div>
@@ -102,6 +102,10 @@
 
 
 </html>
+
+
+
+
 
 
 
