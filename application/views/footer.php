@@ -60,7 +60,7 @@
         var persona=$(this).attr('data-persona');
         var action =$(this).attr('data-new');
         params={};
-        params.persona=persona;
+        console.log(params.persona=persona);
         $('.modal-body').load('get_Formulario_nuevo', params,function(){
          
         })  
@@ -78,7 +78,7 @@
       
     })
 
-    
+
 
        /* Formating function for row details */
         function fnFormatDetails ( oTable, nTr )

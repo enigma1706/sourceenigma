@@ -21,31 +21,9 @@
             //do your suff
            }
         };
-
-      $(document).ready(function(){                 
-            
-            $(".md-content").submit(function() {
-              console.log('hola');
-                var formulario = $(".md-content").serializeArray();
-                $.ajax({
-                    type: "post",
-                    dataType: 'json',
-                    url: "crear.php",
-                    data: formulario,
-                }).done(function(respuesta){
-                    $("#mensaje").html(respuesta.mensaje);
-                    alert(respuesta.mensaje);
-                    location.reload();                
-                });
-                return false;
-            });        
-            
-        });
-        
+      
         $this.o = $.extend({}, defaultOptions, options);
         $this.n = new Object();
-       
-       
         var overlay = $($this.o.overlaySelector);
         $(this).click(function() {
         	var modal = $('#' + $(this).attr($this.o.modalAttr)),

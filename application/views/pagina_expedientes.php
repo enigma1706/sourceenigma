@@ -75,10 +75,10 @@
                 </div>
          </div>
      </div>
+ 
               <div class="md-modal colored-header custom-width2 md-effect-9" id="modal-tab">
         <div class="md-content">
           <div class="modal-header">
-            
             <h3></h3>
             <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
@@ -93,6 +93,7 @@
           </div>
         </div>
       </div>
+    
       <!-- Nifty Modal -->
 <div class="md-overlay"> </div> 
         </div>
