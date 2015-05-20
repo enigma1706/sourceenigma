@@ -75,7 +75,7 @@
                 </div>
          </div>
      </div>
-     <form id="frminformacion" method="post">
+     <form  id="frminformacion">
               <div class="md-modal colored-header custom-width2 md-effect-9" id="modal-tab">
         <div class="md-content">
           <div class="modal-header">
@@ -83,8 +83,6 @@
             <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body form">
-        
-        
           </div>
           <div class="modal-footer">
            
@@ -105,10 +103,11 @@
             
             $("#frminformacion").submit(function() {
                 var formulario = $("#frminformacion").serializeArray();
+                console.log(formulario);
                 $.ajax({
                     type: "post",
                     dataType: 'json',
-                    url: "crear.php",
+                    url: "get_Insert_formularios",
                     data: formulario,
                 }).done(function(respuesta){
                     //$("#mensaje").html(respuesta.mensaje);

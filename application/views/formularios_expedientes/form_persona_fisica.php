@@ -10,7 +10,7 @@
           <li><a href="#documentos" data-toggle="tab">Documentos requeridos y anexados</a></li>
         </ul>
         <div class="tab-content">
-          <div class="tab-pane active cont" id="home">
+          <div class="tab-pane active cont form-horizontal" id="home">
             <div class="row">
                 <input type="hidden" name="id" id="id" value="<?php if(isset($Id)){echo $Id;}?>">
                 <input type="hidden" name="T40" id="T40" value="NULL">
@@ -27,15 +27,15 @@
                   <div class="form-group">
                     <label for="genero" class="col-sm-4 control-label">Pertenece a</label>
                     <div class="col-sm-8">                        
-                      <label class="radio-inline"><input type="radio" name="R30" id='R30' onclick="check1(this.value)"  class="icheck" <?php if(isset($R30)){if($R30== "Externo"){ echo 'checked="checked"';}}?>>EXTERNO&nbsp;&nbsp;</label>
-                      <label class="radio-inline"><input type="radio" name="R30" id='R30' onclick="check1(this.value)"  class="icheck" <?php if(isset($R30)){if($R30== "Interno"){ echo 'checked="checked"';}}?>>INTERNO</label>
+                      <label class="radio-inline"><input type="radio" name="R30" id='R30' onclick="check1(this.value)"  class="icheck" <?php if(isset($R30)){if($R30=="Externo"){ echo 'checked="checked"';}}?>>EXTERNO&nbsp;&nbsp;</label>
+                      <label class="radio-inline"><input type="radio" name="R30" id='R30' onclick="check1(this.value)"  class="icheck" <?php if(isset($R30)){if($R30=="Interno"){ echo 'checked="checked"';}}?>>INTERNO</label>
                     </div>
                   </div>
                   <div class="form-group">
-           
+                    <label for="genero" class="col-sm-4 control-label">Género</label>
                     <div class="col-sm-8">                        
-                      <label class="radio-inline"><input type="radio" name="GENERO" id='GENERO' onclick="check1(this.value)"  class="icheck" <?php if(isset($GENERO)){if($GENERO=="Femenino"){ echo 'checked="checked"';}}?>>FEMENINO</label>
-                      <label class="radio-inline"><input type="radio" name="GENERO" id='GENERO' onclick="check1(this.value)"  class="icheck" <?php if(isset($GENERO)){if($GENERO=="Masculino"){ echo 'checked="checked"';}}?>>MASCULINO&nbsp;</label>
+                      <label class="radio-inline"><input type="radio" name="GENERO" id='GENERO' onclick="check(this.value)"  class="icheck" <?php if(isset($GENERO)){if($GENERO=="Femenino"){ echo 'checked="checked"';}}?>>FEMENINO</label>
+                      <label class="radio-inline"><input type="radio" name="GENERO" id='GENERO' onclick="check(this.value)"  class="icheck" <?php if(isset($GENERO)){if($GENERO=="Masculino"){ echo 'checked="checked"';}}?>>MASCULINO&nbsp;</label>
                     </div>
                   </div>
                 </div>

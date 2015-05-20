@@ -144,6 +144,86 @@ class Expediente extends CI_Controller{
            $data['d_estado'] = $item_localidades['d_estado'];  
            $this->load->view('formularios_expedientes/formulario_entidades',$data);   
         }          
-    }                
+    } 
+    public function get_Insert_formularios(){
+            echo $id=$this->input->post('Id');
+            echo $tipo=$this->input->post('tipo');
+            echo $R30=$this->input->post('R30');
+            echo $GENERO=$this->input->post('GENERO');
+            echo $T1=$this->input->post('T1');
+            echo $T2=$this->input->post('T2');
+            echo $T3=$this->input->post('T3');
+            echo $T4=$this->input->post('T4');
+            echo $T5=$this->input->post('T5');
+            echo $T6=$this->input->post('T6');
+            echo $T7=$this->input->post('T7');
+            echo $T8=$this->input->post('T8');
+            echo $T9=$this->input->post('T9');
+            echo $T10=$this->input->post('T10');
+            echo $T11=$this->input->post('T11');
+            echo $T12=$this->input->post('T12');
+            echo $T13=$this->input->post('T13');
+            echo $T14=$this->input->post('T14');
+            echo $T15=$this->input->post('T15');
+            echo $T16=$this->input->post('T16');
+            echo $T17=$this->input->post('T17');
+            echo $T18=$this->input->post('T18');
+            echo $T19=$this->input->post('T19');
+            echo $T52=$this->input->post('T52');
+            echo $T20=$this->input->post('T20');
+            echo $T21=$this->input->post("T21");
+            echo $R1=$this->input->post("R1");
+            echo $T22=$this->input->post("T22");
+            echo $T23=$this->input->post("T23");
+            echo $T24=$this->input->post("T24");
+            echo $T25=$this->input->post("T25");
+            echo $T26=$this->input->post("T26");
+            echo $T27=$this->input->post("T27");
+            echo $T28=$this->input->post("T28");
+            echo $T29=$this->input->post("T29");
+            echo $T30=$this->input->post("T30");
+            echo $T31=$this->input->post("T31");
+            echo $T32=$this->input->post("T32");
+            echo $T33=$this->input->post("T33");
+            echo $T34=$this->input->post("T34");
+            echo $R2=$this->input->post("R2");
+            echo $T35=$this->input->post("T35");
+            echo $R3=$this->input->post("R3");
+            echo $T36=$this->input->post("T36");
+            echo $R4=$this->input->post("R4");
+            echo $T37=$this->input->post("T37");
+            echo $R5=$this->input->post("R5");
+            echo $T38=$this->input->post("T38");
+            echo $R6=$this->input->post("R6");
+            echo $T39=$this->input->post("T39");
+            echo $R7=$this->input->post("R7");
+            echo $R8=$this->input->post("R8");
+            echo $T40=$this->input->post("T40");
+            echo $T41=$this->input->post("T41");
+            echo $T42=$this->input->post("T42");
+            echo $T43=$this->input->post("T43");
+            echo $T44=$this->input->post("T44");
+            echo $T45=$this->input->post("T45");
+            echo $T46=$this->input->post("T46");
+            echo $T47=$this->input->post("T47");
+            echo $T48=$this->input->post("T48");
+            echo $T49=$this->input->post("T49");
+            echo $R9=$this->input->post("R9");
+            echo $R10=$this->input->post("R10");
+            echo $R11=$this->input->post("R11");
+            echo $R12=$this->input->post("R12");
+            echo $R13=$this->input->post("R13");
+            echo $R14=$this->input->post("R14");
+            echo $R15=$this->input->post("R15");
+            echo $R16=$this->input->post("R16");
+            echo $R17=$this->input->post("R17");
+            echo $R18=$this->input->post("R18");
+            echo $R19=$this->input->post("R19");
+            echo $R20=$this->input->post("R20");
+            echo $R21=$this->input->post("R21");
+            echo $R30=$this->input->post("R30"); 
+            echo $T50=$this->input->post("T50");
+            echo $T51=$this->input->post("T51");
+    }     
 }
 ?>

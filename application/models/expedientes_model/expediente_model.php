@@ -29,6 +29,6 @@ class Expediente_model extends CI_Model{
     public function get_Consulta_formularios($id){
     	$query = $this->db->get_where('book_clientes', array('Id' => $id));
     	return $query->result_array();
-    }
+    }          
 }
 ?>
