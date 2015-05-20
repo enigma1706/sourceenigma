@@ -29,6 +29,15 @@ class Expediente_model extends CI_Model{
     public function get_Consulta_formularios($id){
     	$query = $this->db->get_where('book_clientes', array('Id' => $id));
     	return $query->result_array();
-    }          
+    }
+    public function get_Insert_expdiente($data){
+        $this->db->insert('book_clientes',$data); 
+    }
+    public function get_Update_expdiente($data,$id){
+        $this->db->where('Id', $id);
+        $this->db->update('book_clientes', $data); 
+
+    }
+
 }
 ?>

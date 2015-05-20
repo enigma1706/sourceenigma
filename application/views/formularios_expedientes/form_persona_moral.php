@@ -10,10 +10,19 @@
           <li><a href="#documentos" data-toggle="tab">Documentos requeridos y anexados</a></li>
         </ul>
         <div class="tab-content">
-          <div class="tab-pane active cont" id="home">
+          <div class="tab-pane active cont form-horizontal" id="home">
             <div class="row">
-              <form class="form-horizontal" role="form" id='form'>
-                <div class="col-md-6">                  
+             <input type="hidden" name="id" id="id" value="<?php if(isset($Id)){echo$Id;}?>">
+                <input type="hidden" name="T40" id="T40" value="NULL">
+                <input type="hidden" name="R14" id="R14" value="NULL">
+                <input type="hidden" name="T43" id="T43" value="NULL">
+                <div class="col-md-6"> 
+                <div class="form-group">
+                    <label for="D1" class="col-md-4 control-label">Tipo de persona</label>
+                    <div class="col-md-8">                        
+                      <input type="text" class="form-control" name="tipo" id="tipo" value="<?php if(isset($tipo)){echo$tipo;}else{echo'MORAL';}?>"> 
+                    </div> 
+                    </div>                
                   <div class="form-group">
                     <label for="genero" class="col-sm-4 control-label">Pertenece a</label>
                     <div class="col-sm-8">                        
@@ -29,9 +38,7 @@
                       <input type="text" class="form-control" name="T1" id="T1" placeholder="Nombre o Razón Social" value="<?php if(isset($nombre)){echo$nombre;}?>">
                     </div>
                   </div>                               
-                  
                 </div>
-              </form>
             </div>
           </div>
           <div class="tab-pane cont form-horizontal" id="profile">
@@ -96,9 +103,8 @@
                 </div>
             </div>
           </div>
-              <div class="tab-pane" id="messages">
+              <div class="tab-pane form-horizontal" id="messages">
                 <div class="row">
-                  <form class="form-horizontal" role="form">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="D1" class="col-md-4 control-label">Fecha de constitución</label>
@@ -151,12 +157,10 @@
                         </div>
                       </div>                      
                     </div>           
-                </form>
               </div>
             </div>
-            <div class="tab-pane" id="estructuraCorp">
+            <div class="tab-pane form-horizontal" id="estructuraCorp">
                 <div class="row">
-                  <form class="form-horizontal" role="form">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="nombre" class="col-sm-4 control-label">Forma de administración de la sociedad</label>
@@ -191,12 +195,10 @@
                           </div>
                       </div>                                            
                     </div>           
-                </form>
               </div>
             </div>
-              <div class="tab-pane" id="documentos">
+              <div class="tab-pane form-horizontal" id="documentos">
                 <div class="row">
-                  <form class="form-horizontal" role="form">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="nombre" class="col-sm-4 control-label">Identificación oficial</label>
@@ -220,7 +222,6 @@
                         </div>
                       </div>
                   </div>
-                    
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="nombre" class="col-sm-4 control-label">Nombre del documento</label>
@@ -241,7 +242,6 @@
                         </div>
                       </div>
                     </div>
-                  </form>
               </div>
               </div>
             </div>          

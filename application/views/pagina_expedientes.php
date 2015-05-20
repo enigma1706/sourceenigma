@@ -86,24 +86,23 @@
           </div>
           <div class="modal-footer">
            
-            <button type="submit" name="submit" class="btn btn-default btn-flat md-close" data-dismiss="modal">Cancelar</button>
-            <button id="boton" type="submit" class="btn btn-primary btn-flat md-close" data-dismiss="modal">Guardar</button>
+            <button type="button" class="btn btn-default btn-flat md-close" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary btn-flat md-close" data-dismiss="modal">Guardar</button>
           </div>
         </div>
       </div>
-      </form>
       <!-- Nifty Modal -->
 <div class="md-overlay"> </div> 
         </div>
       </div> 
     </div>
+</form>
 </body>
 <script>
         $(document).ready(function(){                 
             
             $("#frminformacion").submit(function() {
                 var formulario = $("#frminformacion").serializeArray();
-                console.log(formulario);
                 $.ajax({
                     type: "post",
                     dataType: 'json',
@@ -112,7 +111,7 @@
                 }).done(function(respuesta){
                     //$("#mensaje").html(respuesta.mensaje);
                     //alert(respuesta.mensaje);
-                    //location.reload();                
+                    location.reload();                
                 });
                 return false;
             });        
