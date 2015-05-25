@@ -5,7 +5,7 @@
            <select name="T7"  id='T7' class="form-control">
                 <option value="0">Seleccione Opci&oacute;n</option>
                     <?php foreach ($colonia as $dat):?>
-                    <option value="<?php echo $dat['d_asenta'] ?>"><?php echo $dat['d_asenta'];?></option>
+                    <option value="<?php echo $dat['Id'] ?>"><?php echo $dat['d_asenta'];?></option>
                     <?php endforeach;?>
 			</select>
         </div>

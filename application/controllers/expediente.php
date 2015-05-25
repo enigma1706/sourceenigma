@@ -86,7 +86,7 @@ class Expediente extends CI_Controller{
             $data['T36']=$item_cliente["T36"];
             $data['R4']=$item_cliente["R4"];
             $data['T37']=$item_cliente["T37"];
-            $data['T35']=$item_cliente["R5"];
+            $data['R5']=$item_cliente["R5"];
             $data['T38']=$item_cliente["T38"];
             $data['R6']=$item_cliente["R6"];
             $data['T39']=$item_cliente["T39"];

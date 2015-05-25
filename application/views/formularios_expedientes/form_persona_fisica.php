@@ -187,7 +187,7 @@
                   <div class="form-group">
                     <label for="T50" class="col-sm-4 control-label">Actividad economica</label>
                     <div class="col-sm-8">                        
-                      <select  id='T16' class="form-control">
+                      <select  id='T16' name='T16' class="form-control">
                         <option value="<?php if(isset($T16)){echo $T16;}else{echo 'Seleccione Opci&oacute;n';}?>"><?php if(isset($T16)){echo $T16;}else{echo 'Seleccione Opci&oacute;n';}?></option>
                           <?php foreach ($actividad as $dat_actividad):?>
                         <option value="<?php echo $dat_actividad['actividad_economica'] ?>"><?php echo $dat_actividad['actividad_economica'];?></option>
@@ -213,8 +213,8 @@
                   <div class="form-group">
                     <label for="nombre" class="col-sm-4 control-label">Puesto en el gobierno</label>
                     <div class="col-sm-8">
-                      <label class="radio-inline"> <input type="radio" id="$R1" onclick="check(this.value)" class="icheck" value="SI" <?php if(isset($R1)){if($R1== "SI"){ echo 'checked="checked"';}}?>> SI</label>
-                      <label class="radio-inline"> <input type="radio" id="$R1" onclick="check(this.value)" class="icheck" value="NO" <?php if(isset($R1)){if($R1== "NO"){ echo 'checked="checked"';}}?>> NO</label>
+                      <label class="radio-inline"> <input type="radio" name='R1' id="R1" onclick="check(this.value)" value="SI"  class="icheck" <?php if(isset($R1)){if($R1== "SI"){ echo 'checked="checked"';}}?>> SI</label>
+                      <label class="radio-inline"> <input type="radio" name='R1' id="R1" onclick="check(this.value)" value="NO"  class="icheck" <?php if(isset($R1)){if($R1== "NO"){ echo 'checked="checked"';}}?>> NO</label>
                     </div>
                   </div>                    
                   <div class="form-group">
@@ -234,22 +234,23 @@
                   <div class="form-group">
                     <label for="nombre" class="col-sm-4 control-label">Identificación oficial</label>
                     <div class="col-sm-8">
-                      <label class="radio-inline"> <input type="radio" id="$R2" onclick="check1(this.value)" value="SI" class="icheck" <?php if(isset($R2)){if($R2== "SI"){ echo 'checked="checked"';}}?>> SI</label>
-                      <label class="radio-inline"> <input type="radio" id="$R2" onclick="check1(this.value)" value="NO" class="icheck" <?php if(isset($R2)){if($R2== "NO"){ echo 'checked="checked"';}}?>> NO</label>          
+                      <label class="radio-inline"> <input type="radio" name="R2"  id="R2" onclick="check(this.value)" value="SI" class="icheck" <?php if(isset($R2)){if($R2== "SI"){ echo 'checked="checked"';}}?>> SI</label>
+                      <label class="radio-inline"> <input type="radio" name="R2"  id="R2" onclick="check(this.value)" value="NO" class="icheck" <?php if(isset($R2)){if($R2== "NO"){ echo 'checked="checked"';}}?>> NO</label>          
                     </div>
                   </div>                
                   <div class="form-group">
                     <label for="nombre" class="col-sm-4 control-label">CURP/RFC</label>
                     <div class="col-sm-8">
-                      <label class="radio-inline"> <input type="radio" id="$R3" onclick="check2(this.value)" value="SI" class="icheck" <?php if(isset($R3)){if($R3== "SI"){ echo 'checked="checked"';}}?>>SI</label>
-                      <label class="radio-inline"> <input type="radio" id="$R3" onclick="check2(this.value)" value="NO" class="icheck" <?php if(isset($R3)){if($R3== "NO"){ echo 'checked="checked"';}}?>>NO</label>
+                      <label class="radio-inline"> <input type="radio" name="R3" id="R3" onclick="check(this.value)" value="SI" class="icheck" <?php if(isset($R3)){if($R3== "SI"){ echo 'checked="checked"';}}?>>SI</label>
+                      <label class="radio-inline"> <input type="radio" name='R3' id="R3" onclick="check
+                      (this.value)" value="NO" class="icheck" <?php if(isset($R3)){if($R3== "NO"){ echo 'checked="checked"';}}?>>NO</label>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="nombre" class="col-sm-4 control-label">Comprobante de domicilio</label>
                     <div class="col-sm-8">
-                      <label class="radio-inline"> <input type="radio" id="$R4" onclick="check3(this.value)" value="SI" class="icheck" <?php if(isset($R4)){if($R4== "SI"){ echo 'checked="checked"';}}?>> SI</label>
-                      <label class="radio-inline"> <input type="radio" id="$R4" onclick="check3(this.value)" value="NO" class="icheck" <?php if(isset($R4)){if($R4== "NO"){ echo 'checked="checked"';}}?>> NO</label>                   
+                      <label class="radio-inline"> <input type="radio" name='R4' id="R4" onclick="check3(this.value)" value="SI" class="icheck" <?php if(isset($R4)){if($R4== "SI"){ echo 'checked="checked"';}}?>> SI</label>
+                      <label class="radio-inline"> <input type="radio" name='R4' id="R4" onclick="check3(this.value)" value="NO" class="icheck" <?php if(isset($R4)){if($R4== "NO"){ echo 'checked="checked"';}}?>> NO</label>                   
                     </div>
                   </div>
                 </div>

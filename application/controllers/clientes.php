@@ -2,11 +2,11 @@
 class Clientes extends CI_Controller{
 
     public function mostrar_pagina_clientes(){
-        $this->load->model('empleados_model');
-        $listadoEmpleados = $this->empleados_model->get_Empleados();
-        $listado_total_clientes= $this->empleados_model->get_Numero_total();
-        $listado_fisicas=$this->empleados_model->get_Empleados_fisica();
-        $listado_moral=$this->empleados_model->get_Empleados_moral();
+        $this->load->model('expedientes_model/expediente_model');
+        $listadoEmpleados = $this->expediente_model->get_Expedientes();
+        $listado_total_clientes= $this->expediente_model->get_Numero_total();
+        $listado_fisicas=$this->expediente_model->get_Empleados_fisica();
+        $listado_moral=$this->expediente_model->get_Empleados_moral(); 
         $data = array(
         'empleados' => $listadoEmpleados
         );
@@ -28,8 +28,8 @@ class Clientes extends CI_Controller{
     public function get_Formulario_update(){
         $id_cliente=$this->input->post('id');
         $tipo_formulario=$this->input->post('persona');
-        $this->load->model('empleados_model');
-        $datos_empleados=$this->empleados_model->get_Consulta_formularios($id_cliente);
+        $this->load->model('expedientes_model/expediente_model');
+        $listadoEmpleados = $this->expediente_model->get_Expedientes();
         foreach ( $datos_empleados as $item_cliente) {
             $data['Id']=$item_cliente['Id'];
             $data['tipo']=$item_cliente['tipo'];

@@ -15,9 +15,9 @@
             </div>
               <ul class="cl-vnavigation">          
               </p>
-              <li><a href="<?=base_url('expediente/mostrar_pagina_expedientes');?>"><i class="fa fa-book"></i><span>Expedientes</span></a></li>
-              <li><a href="<?=base_url('clientes/mostrar_pagina_clientes');?>"><i class="fa fa-users"></i><span>Clientes</span></a></li>
-              <li><a href="<?=base_url('creditos/mostrar_pagina_creditos');?>"><i class="fa fa-credit-card"></i><span>Creditos</span></a></li>
+              <li><a href="<?=base_url('index.php/expediente/mostrar_pagina_expedientes');?>"><i class="fa fa-book"></i><span>Expedientes</span></a></li>
+              <li><a href="<?=base_url('index.php/clientes/mostrar_pagina_clientes');?>"><i class="fa fa-users"></i><span>Clientes</span></a></li>
+              <li><a href="<?=base_url('index.php/creditos/mostrar_pagina_creditos');?>"><i class="fa fa-credit-card"></i><span>Creditos</span></a></li>
               <li><a href="#"><i class="fa fa-file-text"></i><span>Reportes PLD</span></a></li>
               <li><a href="#"><i class="fa fa-exclamation-triangle"></i><span>Alertas Pendientes</span></a></li>
               <li><a href="#"><i class="fa fa-check-circle"></i><span>Alertas Resueltas</span></a></li>
