@@ -54,8 +54,8 @@
               <div class="nano nscroller">
                 <div class="content">
                   <ul>
-                    <li> <a href="#"> <img src="<?= base_url('images/blue.jpg')?>" alt="avatar" /><span class="date pull-right">8 May.</span> <span class="name">Blue Demon</span> Blue Demon esta fuera del Perfil Transaccional Permitido. </a> </li>
-                    <li> <a href="#"> <img src="<?= base_url('images/atlantis.jpg')?>" alt="avatar" /><span class="date pull-right">9 May.</span><span class="name">Atlantis</span>Realizo Pago en efectivo mayor a 300,000 pesos permitido para  Persona Fisica.</a> </li>
+                    <li> <a href="#"> <img src="<?= base_url('assets/images/blue.jpg')?>" alt="avatar" /><span class="date pull-right">8 May.</span> <span class="name">Blue Demon</span> Blue Demon esta fuera del Perfil Transaccional Permitido. </a> </li>
+                    <li> <a href="#"> <img src="<?= base_url('assets/images/atlantis.jpg')?>" alt="avatar" /><span class="date pull-right">9 May.</span><span class="name">Atlantis</span>Realizo Pago en efectivo mayor a 300,000 pesos permitido para  Persona Fisica.</a> </li>
                   </ul>
                 </div>
               </div>

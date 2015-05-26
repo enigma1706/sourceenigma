@@ -42,7 +42,7 @@
                   <div class="form-group">
                     <label for="nombre" class="col-sm-4 control-label">Nombre(s)</label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" name="T1" id="T1" placeholder="Nombre(s)" value="<?php if(isset($nombre)){echo$nombre;}?>">
+                      <input type="text" class="form-control" name="T1" id="T1"  placeholder="Nombre(s)" value="<?php if(isset($nombre)){echo$nombre;}?>">
                     </div>
                   </div>
                   <div class="form-group">

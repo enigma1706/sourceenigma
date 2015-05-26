@@ -35,7 +35,7 @@ class Expediente_model extends CI_Model{
     }
     public function get_Update_expdiente($data,$id){
         $this->db->where('Id', $id);
-        $this->db->update('book_clientes', $data); 
+        $this->db->update('book_clientes',$data); 
 
     }
 
