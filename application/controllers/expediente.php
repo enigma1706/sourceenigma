@@ -33,7 +33,6 @@ class Expediente extends CI_Controller{
         $id_cliente=$this->input->post('id');
         $tipo_formulario=$this->input->post('persona');
         $this->load->model('expedientes_model/expediente_model');
-        $this->load->model('expedientes_model/expediente_model');
         $list_actividad = $this->expediente_model->get_Actividad_economica();
         $data = array(
         'actividad' => $list_actividad

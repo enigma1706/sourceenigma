@@ -4950,6 +4950,10 @@ button::-moz-focus-inner {
   width: 40%;
   max-width: none;
 }
+.custom-width-expedientes {
+  width: 60%;
+  max-width: none;
+}
 .modal-content > .close {
   margin-right: 10px;
   margin-top: 10px;
@@ -4971,6 +4975,12 @@ button::-moz-focus-inner {
   padding: 20px;
   border-bottom: 1px solid #1080de !important;
   background-color: #2494f2;
+  color: #fff;
+}
+.colored-header-encabezado .modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #1080de !important;
+  background-color: #555;
   color: #fff;
 }
 .colored-header.success .modal-header {

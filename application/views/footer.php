@@ -23,11 +23,14 @@
     <script src="<?=base_url('assets/js/page-data-tables.js')?>" type="text/javascript"></script>
     <script src="<?=base_url('assets/lib/jquery.niftymodals/js/jquery.modalEffects.js')?>" type="text/javascript"></script>
     <script type="text/javascript"> 
-      $(document).ready(function(){
+    $(document).ready(function(){
         //initialize the javascript
         App.init();
         App.dataTables();
-////////////eventos de expedientes///////////////
+        App.pageProfile();
+        App.charts();
+        $('.md-trigger').modalEffects();
+            ////////////eventos de expedientes///////////////
         $("#frminformacion").submit(function() {
               var formulario=$("#frminformacion").serializeArray();
                 $.ajax({
@@ -35,10 +38,10 @@
                     dataType: 'json',
                     url: "get_Insert_formularios",
                     data: formulario,
-                })
+        })
                 //return false;
-            });        
-        $(document).on('click','#editar',function(){
+    });        
+    $(document).on('click','#editar',function(){
         var id= $(this).attr('data-id');
         var persona=$(this).attr('data-persona');
         var action =$(this).attr('data-edit');
@@ -48,9 +51,9 @@
         console.log(params.action=action);
         $('.modal-body').load('get_Formulario_update', params,function(){
          
-        })  
+            })  
     })
-        $(document).on('click','#new',function(){
+    $(document).on('click','#new',function(){
         var persona=$(this).attr('data-persona');
         var action =$(this).attr('data-new');
         params={};
@@ -60,7 +63,7 @@
         })  
       
     })
-        $(document).on('click','#new_moral',function(){
+    $(document).on('click','#new_moral',function(){
         var persona=$(this).attr('data-persona');
         var action =$(this).attr('data-new');
         params={};
@@ -68,20 +71,17 @@
         $('.modal-body').load('get_Formulario_nuevo', params,function(){
          
         })  
-      
     }) 
-///////////////fin de eventos expedientes////////////////
-//////////////Eventos Clientes//////////////////////////
- $(document).on('click','#id_credito',function(){
+        ///////////////fin de eventos expedientes////////////////
+        //////////////Eventos Clientes//////////////////////////
+    $(document).on('click','#id_credito',function(){
         var id= $(this).attr('data-id');
-        params={};
-        console.log(params.id=id);
-        $('.container-fluid').load('mostrar_pagina_clientes', params,function(){
-         
-        })  
-    })
-          });
+        var url='mostrar_agrupacion_creditos?v='.concat(id);
+        document.location=(url);
+    }) 
+});
 </script>
 
+  
   </body>
 </html>

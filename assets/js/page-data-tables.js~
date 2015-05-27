@@ -5,7 +5,6 @@ var App = (function () {
 
     //Basic Instance
     $("#datatable").dataTable();
-    $("#datatable-expedientes").dataTable();
     $("#datatable-clientes").dataTable();
     $("#datatable-creditos").dataTable();
     $("#datatable-movimientos").dataTable();

@@ -22,10 +22,12 @@ class Creditos_model extends CI_Model{
 		$this->db->from('book_clientes');
 		return $this->db->count_all_results();
     }
-    public function get_Consulta_formularios($id){
-
-    	 $query = $this->db->get_where('book_clientes', array('Id' => $id));
-    	 return $query->result_array();
+    public function get_Creditos_cliente($id){
+        $query = $this->db->query("SELECT Id,no_credito,T1,tipo_moneda,T3,T4,tipo_credito,T2,@rownum:=@rownum+1 as num_credito,Estado  FROM book_creditos,(SELECT @rownum:=0)R where id_expediente=$id order by Id desc;");
+        return $query->result_array();
+        //$query = $this->db->get_where('book_creditos', array('id_expediente' => $id));
+        //return $query->result_array();
     }
+
 }
 ?>

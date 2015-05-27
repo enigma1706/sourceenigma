@@ -45,7 +45,7 @@
                         </div>
                         <div class="content">
                             <div>
-                                <table class="table table-bordered" id="datatable-icons" >
+                                <table class="table table-bordered" id="datatable-expedientes" >
                                     <thead>
                                         <tr>
                                             <th>Tipo de Persona</th>
@@ -77,7 +77,7 @@
          </div>
      </div>
      <form  id="frminformacion" method="post">
-              <div class="md-modal colored-header custom-width2 md-effect-9" id="modal-tab">
+              <div class="md-modal colored-header-encabezado custom-width-expedientes md-effect-9" id="modal-tab">
         <div class="md-content">
           <div class="modal-header">
             <h3></h3>

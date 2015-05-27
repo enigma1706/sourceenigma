@@ -53,7 +53,7 @@
                             </div>
                             <div class="content">
                                 <div>
-                                    <table class="table table-bordered" id="datatable-icons" >
+                                    <table class="table table-bordered" id="datatable-clientes" >
                                         <thead>
                                             <tr>
                                                 <th>Nombre Cliente</th>
