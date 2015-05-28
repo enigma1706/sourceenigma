@@ -147,41 +147,35 @@
       <h3>Productos</h3>
       <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
     </div>
-    <form id="form-alertas">
+    <form id="form-productos">
       <div class="modal-body form">
+      <h4><a href="#" data-modal="form-primary-newproducto" class="md-trigger">Agregar nuevo producto</a></h4>
         <div class="row">
-
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label>Nombre o razon Social</label>
-              <input type="text" placeholder="Nombre o razon Social" class="form-control">
-            </div>
-            <div class="form-group">
-              <label>Clave CASFIM</label>
-              <input type="text" placeholder="Clave CASFIM" class="form-control">
-            </div>
-            <div class="form-group">
-              <label>Dirección completa</label>
-              <input type="text" placeholder="Dirección completa" class="form-control">
-            </div>
-            <div class="form-group">
-              <label>Codigo Postal</label>
-              <input type="text" placeholder="Codigo Postal" class="form-control">
-            </div>
+          <div class="col-md-12">
+            <table id="datatable-creditos" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tolerancia de Cuota</th>
+                  <th>Tolerancia de Cuota interes</th>
+                  <th>Min. de credito</th>
+                  <th>Max. de credito</th>
+                  <th></th>               
+                </tr>
+              </thead>
+              <tbody>                           
+                <tr class="odd gradeX">
+                  <td>SIMPLE INDIVIDUAL</td>
+                  <td>2.99</td>
+                  <td>0.00</td>
+                  <td class="center">$4,000.00</td>
+                  <td class="center">$100,000.00</td>
+                  <td class="center"><button data-modal="form-primary-creditos" class="btn btn-primary  btn-sm md-trigger"><i class="fa fa-folder-open"></i></button></td>
+                </tr>                          
+              </tbody>
+            </table>
           </div>
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label>Nombre del operador del sistema</label>
-              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
-            </div>
-            <div class="form-group">
-              <label>Correo electronico del operador del sistema</label>
-              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
-            </div>
-            
-          </div>
-        </div>
-                
+        </div>        
       </div>
     </form>
     <div class="modal-footer">
@@ -532,6 +526,60 @@
           </div>
         </div>
                 
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<!-- Formulario para agregar un nuevo producto -->
+<!-- Nifty Modal Productos-->
+<div id="form-primary-newproducto" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Nuevo Producto</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-productos">
+      <div class="modal-body form">
+      
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del Producto</label>
+              <input type="text" placeholder="Nombre del Producto" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Tolerancia de Cuota</label>
+              <input type="text" placeholder="Tolerancia de Cuota" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Tolerancia de Cuota interes</label>
+              <input type="text" placeholder="Tolerancia de Cuota interes" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Min Monto del credito</label>
+              <input type="text" placeholder="Min Monto del credito" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Max. Monto de credito.</label>
+              <input type="text" name="T1" id="T1" placeholder="Max. Monto de credito." class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Min.Plazo de credito en meses</label>
+              <input type="text" placeholder="Min.Plazo de credito en meses" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Max.Plazo de credito en meses</label>
+              <input type="text" placeholder="Max.Plazo de credito en meses" class="form-control">
+            </div>
+          </div>
+        </div>        
       </div>
     </form>
     <div class="modal-footer">
