@@ -11,6 +11,8 @@ var App = (function () {
     $("#datatable-movimientos").dataTable();
     $("#datatable-alertas").dataTable();
     
+    
+    
     //Search input style
     $('.dataTables_filter input').addClass('form-control').attr('placeholder','Buscar');
     $('.dataTables_length select').addClass('form-control');  

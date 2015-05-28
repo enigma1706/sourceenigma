@@ -80,6 +80,13 @@
         document.location=(url);
     }) 
 });
+
+$('.table').dataTable({
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.7/i18n/Spanish.json"
+        },
+        "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "Todos"]]
+});
 </script>
 
   
