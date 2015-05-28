@@ -26,7 +26,7 @@
     $(document).ready(function(){
         //initialize the javascript
         App.init();
-        App.dataTables();
+        App.dataTables(12);
         App.pageProfile();
         App.charts();
         $('.md-trigger').modalEffects();

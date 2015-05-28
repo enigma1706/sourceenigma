@@ -59,7 +59,7 @@
             <div class="tab-container">
               <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home">Crédito</a></li>
-                <li><a data-toggle="tab" href="#friends">Bitacora de Movimientos</a></li>
+                <li><a data-toggle="tab" href="#friends"> Acumulado de Movimientos en Efectivo</a></li>
               </ul>
               <div class="tab-content">
                 <div id="home" class="tab-pane active cont">
@@ -101,39 +101,24 @@
                   </div>
                 </div>
                 <div id="friends" class="tab-pane cont">
-                  <table id="datatable-movimientos" class="table table-bordered">
+                  <table id="datatable2" class="table table-bordered">
                     <thead>
                       <tr>
-                        <th>#</th>
-                        <th>Fecha</th>
-                        <th>Tipo Cargo</th>
                         <th>Origen Cargo</th>
                         <th>Monto</th>
-                        <th>Moneda</th>
-                        <th>Observaciones</th>              
-                        <th></th>                          
+                        <th>Moneda</th> 
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="odd gradeX">
-                        <td>1</td>
-                        <td>25-05-2015</td>
-                        <td>PAGO DE CUOTA</td>
                         <td class="center"> TRANSFERENCIAS</td>
-                        <td class="center"> 73,725.67</td>
+                        <td class="center">73,725.67</td>
                         <td class="center"> MXN</td>
-                        <td class="center"> </td>
-                        <td class="center"><button data-modal="form-primary-movimientos" class="btn btn-primary btn-sm md-trigger"><i class="fa fa-pencil"></i></button></td>
                       </tr>
                       <tr class="even gradeC">
-                        <td>2</td>
-                        <td>25-05-2015</td>
-                        <td>PAGO DE CUOTA</td>
                         <td class="center"> TRANSFERENCIAS</td>
                         <td class="center"> 6,236.91</td>
                         <td class="center"> MXN</td>
-                        <td class="center"> </td>
-                        <td class="center"><button data-modal="form-primary-movimientos" class="btn btn-primary btn-sm md-trigger"><i class="fa fa-pencil"></i></button></td>
                       </tr>
                     </tbody>
                   </table>                    
@@ -455,6 +440,6 @@
       </div>
     </div>
     <div class="md-overlay"></div>
-  </div>     
+  </div>  
     </body>
 </html>

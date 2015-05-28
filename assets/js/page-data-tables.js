@@ -1,7 +1,9 @@
 var App = (function () {
 
-  App.dataTables = function( ){
+  App.dataTables = function(a){
     'use strict'
+ console.log(a);
+
 
     //Basic Instance
     $("#datatable").dataTable();
@@ -35,13 +37,32 @@ var App = (function () {
      /* Formating function for row details */
       function fnFormatDetails ( oTable, nTr )
       {
-          var aData = oTable.fnGetData( nTr );
-          var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">';
-          sOut += '<tr><td>Rendering engine:</td><td>'+aData[1]+' '+aData[4]+'</td></tr>';
-          sOut += '<tr><td>Link to source:</td><td>Could provide a link here</td></tr>';
-          sOut += '<tr><td>Extra info:</td><td>And any further details here (images etc)</td></tr>';
-          sOut += '</table>';
-           
+                    var aData = oTable.fnGetData( nTr );
+                    var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">';
+                    sOut +='<thead>';
+                    sOut +='<tr>';
+                    sOut +='<th>Crédito</th>';
+                    sOut +='<th>Monto</th>';
+                    sOut +='<th>Moneda</th>';
+                    sOut +='<th>Inicio</th>';
+                    sOut +='<th>Termino</th>';
+                    sOut +='<th>Tipo Crédito</th>';
+                    sOut +='<th>Limite Cuota</th>';                         
+                    sOut +='</tr>';
+                    sOut +='</thead>';
+                    sOut +='<tbody>';
+                    sOut +='<tr>';
+                    sOut +='<td>'+aData[2]+'</td>';
+                    sOut +='<td></td>';
+                    sOut +='<td></td>';
+                    sOut +='<td></td>';
+                    sOut +='<td></td>';
+                    sOut +='<td></td>';
+                    sOut +='<td></td>';
+                    sOut +='<td></td>';
+                    sOut +='</tr>';
+                    sOut +='</tbody>';
+                    sOut +='</table>';
           return sOut;
       }
      
@@ -50,7 +71,7 @@ var App = (function () {
        */
       var nCloneTh = document.createElement( 'th' );
       var nCloneTd = document.createElement( 'td' );
-      nCloneTd.innerHTML = '<img class="toggle-details" src="' + App.conf.assetsPath + '/' + App.conf.imgPath + '/plus.png" />';
+      nCloneTd.innerHTML = '<img class="toggle-details" src="' +'/enigma' + '/' +'assets/img'+ '/plus.png" />';
       nCloneTd.className = "center";
        
       $('#datatable2 thead tr').each( function () {
@@ -80,13 +101,13 @@ var App = (function () {
           if ( oTable.fnIsOpen(nTr) )
           {
               /* This row is already open - close it */
-              this.src = App.conf.assetsPath + '/' + App.conf.imgPath + "/plus.png";
+              this.src = '/enigma' + '/' + 'assets/img' + "/plus.png";
               oTable.fnClose( nTr );
           }
           else
           {
               /* Open this row */
-              this.src = App.conf.assetsPath + '/' + App.conf.imgPath + "/minus.png";
+              this.src ='/enigma' + '/' + 'assets/img' + "/minus.png";
               oTable.fnOpen( nTr, fnFormatDetails(oTable, nTr), 'details' );
           }
       } );
