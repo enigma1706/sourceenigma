@@ -24,12 +24,15 @@
             <li  class="col-sm-6 no-padding">
               <ul>
                 <li class="dropdown-header"><i class="fa fa-gear"></i>Matriz de Riesgo</li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Frecuencia Pagos</a></li>
-                <li><a href="#">Transaccionalidad</a></li>
-                <li><a href="#">Riesgo geográfico</a></li>
-                <li><a href="#">Tipo de persona</a></li>
-                <li><a href="#">Tipo de movimiento</a></li>
+                <li><a href="#" data-modal="form-primary-datos" class="md-trigger">Datos Generales</a></li>
+                <li><a href="#" data-modal="form-primary-productos" class="md-trigger">Productos</a></li>
+                <li><a href="#" data-modal="form-primary-frecuencia" class="md-trigger">Frecuencia de Pagos</a></li>
+                <li><a href="#" data-modal="form-primary-transaccionalidad" class="md-trigger">Transaccionalidad</a></li>
+                <li><a href="#" data-modal="form-primary-geografico" class="md-trigger">Riesgo geográfico</a></li>
+                <li><a href="#" data-modal="form-primary-actividad" class="md-trigger">Riesgo por actividad</a></li>                
+                <li><a href="#" data-modal="form-primary-persona" class="md-trigger">Tipo de persona</a></li>
+                <li><a href="#" data-modal="form-primary-nopersonas" class="md-trigger">Número de personas</a></li>
+                <li><a href="#" data-modal="form-primary-movimientos" class="md-trigger">Tipo de movimientos</a></li>
 
               </ul>
             </li>
@@ -87,4 +90,454 @@
     <!--/.nav-collapse -->
   </div>
 </div>
+<!-- Nifty Modal Datos Generales-->
+<div id="form-primary-datos" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Datos Generales</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-alertas">
+      <div class="modal-body form">
+        <div class="row">
 
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre o razon Social</label>
+              <input type="text" placeholder="Nombre o razon Social" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Clave CASFIM</label>
+              <input type="text" placeholder="Clave CASFIM" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" placeholder="Dirección completa" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Codigo Postal</label>
+              <input type="text" placeholder="Codigo Postal" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del operador del sistema</label>
+              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Correo electronico del operador del sistema</label>
+              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
+            </div>
+            
+          </div>
+        </div>
+                
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<!-- Nifty Modal Productos-->
+<div id="form-primary-productos" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Productos</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-alertas">
+      <div class="modal-body form">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre o razon Social</label>
+              <input type="text" placeholder="Nombre o razon Social" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Clave CASFIM</label>
+              <input type="text" placeholder="Clave CASFIM" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" placeholder="Dirección completa" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Codigo Postal</label>
+              <input type="text" placeholder="Codigo Postal" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del operador del sistema</label>
+              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Correo electronico del operador del sistema</label>
+              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
+            </div>
+            
+          </div>
+        </div>
+                
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<!-- Nifty Modal Frecuencia Pagos-->
+<div id="form-primary-frecuencia" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Frecuencia de Pagos</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-alertas">
+      <div class="modal-body form">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre o razon Social</label>
+              <input type="text" placeholder="Nombre o razon Social" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Clave CASFIM</label>
+              <input type="text" placeholder="Clave CASFIM" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" placeholder="Dirección completa" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Codigo Postal</label>
+              <input type="text" placeholder="Codigo Postal" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del operador del sistema</label>
+              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Correo electronico del operador del sistema</label>
+              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
+            </div>
+            
+          </div>
+        </div>
+                
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<!-- Nifty Modal Transaccionalidad-->
+<div id="form-primary-transaccionalidad" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Transaccionalidad</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-alertas">
+      <div class="modal-body form">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre o razon Social</label>
+              <input type="text" placeholder="Nombre o razon Social" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Clave CASFIM</label>
+              <input type="text" placeholder="Clave CASFIM" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" placeholder="Dirección completa" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Codigo Postal</label>
+              <input type="text" placeholder="Codigo Postal" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del operador del sistema</label>
+              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Correo electronico del operador del sistema</label>
+              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
+            </div>
+            
+          </div>
+        </div>
+                
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<!-- Nifty Modal Riesgo Geográfico-->
+<div id="form-primary-geografico" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Riesgo Geográfico</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-alertas">
+      <div class="modal-body form">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre o razon Social</label>
+              <input type="text" placeholder="Nombre o razon Social" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Clave CASFIM</label>
+              <input type="text" placeholder="Clave CASFIM" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" placeholder="Dirección completa" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Codigo Postal</label>
+              <input type="text" placeholder="Codigo Postal" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del operador del sistema</label>
+              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Correo electronico del operador del sistema</label>
+              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
+            </div>
+            
+          </div>
+        </div>
+                
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<!-- Nifty Modal Riesgo Actividad-->
+<div id="form-primary-actividad" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Riesgo por Actividad</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-alertas">
+      <div class="modal-body form">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre o razon Social</label>
+              <input type="text" placeholder="Nombre o razon Social" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Clave CASFIM</label>
+              <input type="text" placeholder="Clave CASFIM" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" placeholder="Dirección completa" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Codigo Postal</label>
+              <input type="text" placeholder="Codigo Postal" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del operador del sistema</label>
+              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Correo electronico del operador del sistema</label>
+              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
+            </div>
+            
+          </div>
+        </div>
+                
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<!-- Nifty Modal Tipo de Persona-->
+<div id="form-primary-persona" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Tipo de Persona</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-alertas">
+      <div class="modal-body form">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre o razon Social</label>
+              <input type="text" placeholder="Nombre o razon Social" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Clave CASFIM</label>
+              <input type="text" placeholder="Clave CASFIM" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" placeholder="Dirección completa" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Codigo Postal</label>
+              <input type="text" placeholder="Codigo Postal" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del operador del sistema</label>
+              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Correo electronico del operador del sistema</label>
+              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
+            </div>
+            
+          </div>
+        </div>
+                
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<!-- Nifty Modal Número de  Personas-->
+<div id="form-primary-nopersonas" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Número de Personas</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-alertas">
+      <div class="modal-body form">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre o razon Social</label>
+              <input type="text" placeholder="Nombre o razon Social" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Clave CASFIM</label>
+              <input type="text" placeholder="Clave CASFIM" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" placeholder="Dirección completa" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Codigo Postal</label>
+              <input type="text" placeholder="Codigo Postal" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del operador del sistema</label>
+              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Correo electronico del operador del sistema</label>
+              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
+            </div>
+            
+          </div>
+        </div>
+                
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<!-- Nifty Modal Movimientos-->
+<div id="form-primary-movimientos" class="md-modal colored-header-encabezado custom-width-productos md-effect-12">
+  <div class="md-content">
+    <div class="modal-header">
+      <h3>Tipo de Movimientos</h3>
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+    </div>
+    <form id="form-alertas">
+      <div class="modal-body form">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre o razon Social</label>
+              <input type="text" placeholder="Nombre o razon Social" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Clave CASFIM</label>
+              <input type="text" placeholder="Clave CASFIM" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" placeholder="Dirección completa" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Codigo Postal</label>
+              <input type="text" placeholder="Codigo Postal" class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nombre del operador del sistema</label>
+              <input type="text" name="T1" id="T1" placeholder="Nombre del operador del sistema" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Correo electronico del operador del sistema</label>
+              <input type="text" placeholder="Correo electronico del operador del sistema" class="form-control">
+            </div>
+            
+          </div>
+        </div>
+                
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+      <button type="button" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Proceed</button>
+    </div>
+  </div>
+</div>
+<div class="md-overlay"></div>

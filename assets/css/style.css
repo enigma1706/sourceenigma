@@ -4954,6 +4954,10 @@ button::-moz-focus-inner {
   width: 60%;
   max-width: none;
 }
+.custom-width-productos {
+  width: 60%;
+  max-width: none;
+}
 .modal-content > .close {
   margin-right: 10px;
   margin-top: 10px;
