@@ -24,13 +24,22 @@ class Clientes extends CI_Controller{
         
         $this->load->model('creditos_model');
         $listadoCreditos=$this->creditos_model->get_Creditos_cliente($id_cliente);
+        $total_oi=$this->creditos_model->get_Total_oi($id_cliente);
+        $total_or=$this->creditos_model->get_Total_or($id_cliente);
+        $total_ip=$this->creditos_model->get_Total_ip($id_cliente);
+        $total_kyc=$this->creditos_model->get_Total_kyc($id_cliente);
         $listado_tipocredito=$this->creditos_model->get_Catalogotipocredito();
         $listado_frecuencia_pagos=$this->creditos_model->get_Frecuenciapago();
         $listado_tipodivisa=$this->creditos_model->get_Divisa();
         $data['clientes_creditos'] = $listadoCreditos;
+        $data['total_oi']=$total_oi;
+        $data['total_or']=$total_or;
+        $data['total_ip']=$total_ip;
+        $data['total_kyc']=$total_kyc;
         $data['tipo_credito'] = $listado_tipocredito;
         $data['frecuencia'] =$listado_frecuencia_pagos;
         $data['tipo_divisa'] =$listado_tipodivisa;
+
         $this->load->view('header');
         $this->load->view('pagina_agrupacion_creditos',$data);
         $this->load->view('footer');

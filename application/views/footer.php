@@ -85,10 +85,10 @@
               var formulario=$("#form-creditos").serializeArray();
               console.log('hola');
                 $.ajax({
-                    type: "post",
-                    dataType: 'json',
-                    url: "get_Insert_credito",
-                    data: formulario,
+                type: "post",
+                dataType: 'json',
+                url: "get_Insert_credito",
+                data: formulario,
         })
                 //return false;
     });

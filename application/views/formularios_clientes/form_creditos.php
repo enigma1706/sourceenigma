@@ -24,7 +24,7 @@
                           </div>
                           <div class="form-group">
                             <label>Monto del crédito</label>
-                            <input type="text" name="T1" id="T1" placeholder="Frecuancia de pago" class="form-control">
+                            <input type="text" name="T1" id="T1" data-mask="currency" placeholder="$0" class="form-control">
                           </div>
                           <div class="form-group">
                             <label>Monto cuota pactado interes</label>

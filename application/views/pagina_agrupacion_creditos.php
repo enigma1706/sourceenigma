@@ -133,7 +133,7 @@
             <div class="block-transparent">                
               <div class="block-flat">
                 <div class="header">
-                  <h3>Análisis de Movimientos</h3>
+                  <h3>Analisis de Créditos.</h3>
                 </div>
                 <div class="content">
                   <div id="site_statistics" style="height: 180px; padding: 0px; position: relative;"></div>
@@ -168,25 +168,25 @@
               <div class="spk4 pull-right spk-widget"></div>
               <h4>Total Alertas</h4>
               <p>Operaciones Inusuales</p>
-              <h3>1</h3>
+              <h3><?= $total_oi?></h3>
             </div>
             <div class="block-flat bars-widget">
               <div class="spk5 pull-right spk-widget"></div>
               <h4>Total Alertas</h4>
               <p>Operaciones Relevantes</p>
-              <h3>1</h3>
+              <h3><?= $total_or?></h3>
             </div>
             <div class="block-flat bars-widget">
               <div class="spk4 pull-right spk-widget"></div>
               <h4>Total Alertas</h4>
               <p>Operaciones Internas Preocupantes</p>
-              <h3>0</h3>
+              <h3><?= $total_ip?></h3>
             </div>
             <div class="block-flat bars-widget">
               <div class="spk5 pull-right spk-widget"></div>
               <h4>Total Alertas</h4>
               <p>Operaciones Reportes Urgentes de 24hrs</p>
-              <h3>0</h3>
+              <h3><?= $total_kyc?></h3>
             </div>              
           </div>
         </div>         
