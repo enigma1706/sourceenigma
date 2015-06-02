@@ -1,4 +1,4 @@
-<html>
+      <html>
 <body>
     <div id="head-nav" class="navbar navbar-default navbar-fixed-top">
       <!-- Main Menu -->
@@ -58,7 +58,7 @@
                                             <td><?php echo $credito['no_credito'];?></td>
                                             <td><?php echo $credito['Estado'];?></td>                                            
                                           <td class="center">
-                                         <button id="editar" class="btn btn-primary btn-xs md-trigger" data-id="<?php echo $credito['Id'];?>" data-persona="<?php echo $credito['tipo_credito'];?>" data-edit="editClient" data-modal="modal-tab" ><i class="fa fa-pencil"></i></button></td>
+                                         <button id="editar_credito" class="btn btn-primary btn-xs md-trigger" data-id="<?php echo $credito['Id'];?>" data-persona="<?php echo $credito['tipo_credito'];?>" data-edit="editClient" data-modal="modal-tab" ><i class="fa fa-pencil"></i></button></td>
                                         </tr>
                                          <?php endforeach;?>
                                     </tbody>

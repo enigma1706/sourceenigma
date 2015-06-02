@@ -25,9 +25,21 @@ class Creditos_model extends CI_Model{
     public function get_Creditos_cliente($id){
         $query = $this->db->query("SELECT Id,no_credito,T1,tipo_moneda,T3,T4,tipo_credito,T2,@rownum:=@rownum+1 as num_credito,Estado  FROM book_creditos,(SELECT @rownum:=0)R where id_expediente=$id order by Id desc;");
         return $query->result_array();
-        //$query = $this->db->get_where('book_creditos', array('id_expediente' => $id));
-        //return $query->result_array();
     }
-
+    public function get_Catalogotipocredito(){
+        $query = $this->db->get('cat_tipocredito');
+        return $query->result_array();
+    }
+    public function  get_Frecuenciapago(){
+        $query = $this->db->get('cat_unidadcredito');
+        return $query->result_array();
+    }
+    public function get_Divisa(){
+        $query = $this->db->get("cat_divisas");
+        return $query->result_array();
+    }
+    public function get_Insert_tabla_creditos($data){
+        $this->db->insert('book_creditos',$data); 
+    }
 }
 ?>

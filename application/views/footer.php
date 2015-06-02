@@ -78,9 +78,31 @@
         var id= $(this).attr('data-id');
         var url='mostrar_agrupacion_creditos?v='.concat(id);
         document.location=(url);
-    }) 
-});
+        }) 
+    });
 
+    $("#form-creditos").submit(function() {
+              var formulario=$("#form-creditos").serializeArray();
+              console.log('hola');
+                $.ajax({
+                    type: "post",
+                    dataType: 'json',
+                    url: "get_Insert_credito",
+                    data: formulario,
+        })
+                //return false;
+    });
+
+     $(document).on('click','#editar_credito',function(){
+        var id_credito= $(this).attr('data-id');
+        params={};
+        console.log(params.id_credito=id_credito);
+        console.log(params.action=action);
+        $('.modal-body').load('get_Formulariocredito_update', params,function(){
+         
+            })  
+    })        
+////////////////////////////////////////////////////////////////////////////////
 $('.table').dataTable({
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.7/i18n/Spanish.json"
